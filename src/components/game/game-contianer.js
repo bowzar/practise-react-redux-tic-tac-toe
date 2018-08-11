@@ -5,8 +5,6 @@ import { Game } from './game';
 const mapStateToProps = (state, props) => {
 
     const histories = state.histories;
-    const current = histories[state.stepNumber];
-
     const winner = state.winner;
     let status = winner ?
         'Winner: ' + winner :
